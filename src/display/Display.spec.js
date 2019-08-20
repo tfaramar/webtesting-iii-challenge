@@ -19,19 +19,29 @@ describe('<Display />', () => {
     //     const {}
     // })
 
-    // it('displays Closed if closed prop is True', () => {
-    //     const {getByText} = render(<Display locked={true} closed={true}/>)
-    //     expect()
-    //     const closed = getByText(/closed/i)
-        
-    //     expect(closed).();
-    // })
+    it('displays Closed if closed prop is True', () => {
+        const {getByText} = render(<Display locked={true} closed={true}/>)
 
-    //it('displays Open if closed prop is False')
+        expect(getByText(/closed/i)).toBeTruthy();
+    })
 
-    // it('displays Locked if the locked prop is True')
+    it('displays Open if closed prop is False', () => {
+        const {getByText} = render(<Display locked={false} closed={false}/>)
 
-    // it ('displays Unlocked if the locked prop is False')
+        expect(getByText(/open/i)).toBeTruthy();
+    })
+
+    it('displays Locked if the locked prop is True', () => {
+        const {getByText} = render(<Display locked={true} closed={true}/>)
+
+        expect(getByText(/locked/i)).toBeTruthy();
+    })
+
+    it ('displays Unlocked if the locked prop is False', () => {
+        const {getByText} = render(<Display locked={false} closed={true}/>)
+
+        expect(getByText(/unlocked/i)).toBeTruthy();
+    })
 
     it('uses the red-led class when locked or closed', () => {
         const {getByText} = render(<Display locked={true} closed={true}/>)
