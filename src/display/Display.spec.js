@@ -10,6 +10,7 @@ describe('<Display />', () => {
 
         expect(tree.toJSON()).toMatchSnapshot();
     });
+
     // it('displays if gate is open/closed')
 
     // it('displays if gate is locked/unlocked', () => {
@@ -20,6 +21,10 @@ describe('<Display />', () => {
 
     // it('displays Closed if closed prop is True', () => {
     //     const {getByText} = render(<Display locked={true} closed={true}/>)
+    //     expect()
+    //     const closed = getByText(/closed/i)
+        
+    //     expect(closed).();
     // })
 
     //it('displays Open if closed prop is False')
