@@ -18,7 +18,7 @@ describe('<Controls />', () => {
 
     //     fireEvent.click(getByText(/toggleClosed/i));
 
-    //     expect(toggleClosed).toHaveBeenCalled();
+    //     expect(toggled).toBe(true);
     // })
 
     // it('has a button that toggles the locked state')

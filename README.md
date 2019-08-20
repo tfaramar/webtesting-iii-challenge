@@ -56,7 +56,7 @@ The expected/assumed behavior of the application is listed below.
 
 ### Dashboard
 
-- shows the controls and display
+√- shows the controls and display
 
 ### Display Component
 

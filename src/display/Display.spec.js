@@ -14,9 +14,9 @@ describe('<Display />', () => {
     // it('displays if gate is open/closed')
 
     // it('displays if gate is locked/unlocked', () => {
-    //     const closed = jest.fn();
+    //     const display = render(<Display />)
+
         
-    //     const {}
     // })
 
     it('displays Closed if closed prop is True', () => {
